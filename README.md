@@ -66,17 +66,11 @@ print(game.get_current_state())
 
 Mancala:
 
-
-For this project you will write a class called Mancala that allows two people to play a text-based version of the game (check the attached PDF file for the detailed rules).
-
 For this board game, two players can play. As the figure shows, the player who choose the bottom red position will be player 1 and the player choose the top blue position will be player 2.  Each player could only choose the pit on his side in each round: player 1 can only choose pits in red and player 2 can only choose pits in blue. The index for each pit is marked in the figure as well.
- 
-We don’t require a GUI for this project and all the input/output will be in the text format.  You can improve your code later on after you finished the required part to make it your own portfolio project.
 
-Your code for the game must define the class and methods described below, but you are encouraged to define other methods or classes that may be useful for the game. All data members must be **private**.
 
 **Mancala:**
-The Mancala object represents the game as played.  The class should contain information about the players and information about the board, it must contain those methods (but may have more):
+The Mancala object represents the game as played.  :
 * create_player: takes one parameter of the player’s name as a string and returns the player object. 
             (You can define the player class by yourself. It will be your own design.)
 * print_board: takes no parameter and will print the current board information in this format:
