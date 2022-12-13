@@ -120,12 +120,4 @@ class ShipGame:
             return self.__p2ships
 
 
-game = ShipGame()
-game.place_ship('first', 5, 'B2', 'C')
-game.place_ship('first', 2, 'I8', 'R')
-game.place_ship('second', 2, 'A1', 'C')
-game.place_ship('first', 8, 'H2', 'R')
-game.fire_torpedo('first', 'H3')
-game.fire_torpedo('second', 'A1')
-print(game.get_current_state())
 
