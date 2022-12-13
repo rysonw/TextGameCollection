@@ -1,13 +1,20 @@
 class Player(object):
     """
-    A class for the player role in the Mancala Game
+    A class for the player role in the TicTacToe Game/Class
     """
 
     def __init__(self, name):
         self._name = name
+        self._symbol = ""
 
     def get_name(self):
         return self._name
+
+    def get_symbol(self):
+        return self._symbol
+
+    def set_symbol(self, sym):
+        self._symbol = sym
 
 
 class TicTacToe(object):
@@ -33,11 +40,13 @@ class TicTacToe(object):
             p1 = Player(name)
             self._curr_number_players += 1
             self._p1_name = p1.get_name()
+            p1.set_symbol("X")
             return p1
         elif self._curr_number_players == 1:
             p2 = Player(name)
             self._curr_number_players += 1
             self._p2_name = p2.get_name()
+            p2.set_symbol("O")
             return p2
         else:
             return
@@ -55,7 +64,7 @@ class TicTacToe(object):
     def return_winner(self):
         """
         A function that returns the winner of the game.  
-        We refer back to the self._board and check to see if the right indexes are 0.
+        We check for vertical, horizontal and diagonal wins
         """
 
         # check for a horizontal win
