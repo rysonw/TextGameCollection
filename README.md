@@ -46,7 +46,7 @@ I
 J                
 ```
 
-As a simple example, your class could be used as follows:
+As a simple example, the class could be used as follows:
 ```
 game = ShipGame()
 game.place_ship('first', 5, 'B2', 'C')
@@ -110,10 +110,8 @@ At the end, the method should return a list of the current seed number in this f
  [player1 pit1, player1 pit2, player1 pit3, player1 pit4, player1 pit5, player1 pit6, player1 store,
            Player2 pit1, player2 pit2, player2 pit3, player2 pit4, player2 pit5, player2 pit6, player2 store,]
 
-Note: in order to test some methods in fewer steps, we may or may not follow the rules to call the two players in turns for play_game method, so your code should not enforce that.  For example, we might keep calling player 1 for four times, then call player 2 twice, and then call player 1 for three times.
-Your python file must be named **Mancala.py**
 
-* As a simple example, your class could be used as follows:
+* As a simple example, the class could be used as follows:
 
       game = Mancala()
       player1 = game.create_player("Lily")
@@ -127,47 +125,6 @@ Your python file must be named **Mancala.py**
       game.play_game(1, 1)
       game.print_board()
       print(game.return_winner())
-
-* And the output will be:
-
-      player 1 take another turn
-      [4, 4, 0, 5, 5, 5, 1, 4, 4, 4, 4, 4, 4, 0]
-      player 2 take another turn
-      player1:
-      store: 10
-      [0, 0, 2, 7, 7, 6]
-      player2:
-      store: 2
-      [5, 0, 1, 1, 0, 7]
-      Game has not ended
-
-
-* Another test example could be:
-
-      game = Mancala()
-      player1 = game.create_player("Lily")
-      player2 = game.create_player("Lucy")
-      game.play_game(1, 1)
-      game.play_game(1, 2)
-      game.play_game(1, 3)
-      game.play_game(1, 4)
-      game.play_game(1, 5)
-      game.play_game(1, 6)
-      game.print_board()
-      print(game.return_winner())
-
-* And the output will be:
-
-      player 1 take another turn
-      player1:
-      store: 12
-      [0, 0, 0, 0, 0, 0]
-      player2:
-      store: 36
-      [0, 0, 0, 0, 0, 0]
-      Winner is player 2: Lucy
-
-
 
 
 

@@ -49,7 +49,7 @@ class TicTacToe(object):
             p2.set_symbol("O")
             return p2
         else:
-            return
+            print("Max Number of Players Reached")
 
 
     def print_board(self):
