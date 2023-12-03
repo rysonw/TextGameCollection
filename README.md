@@ -1,7 +1,7 @@
 A collection of console text-games in python:
 
 
-Ship Game:
+## BattleShip:
 
 
 Each player has their own 10x10 grid they place their ships on. On their turn, they can fire a torpedo at a square on the enemy's grid. Player 'first' gets the first turn to fire a torpedo, after which players alternate firing torpedos. A ship is sunk when all of its squares have been hit. When a player sinks their opponent's final ship, they win.
@@ -64,12 +64,11 @@ print(game.get_current_state())
 ---------------------------------------------------------------------------
 
 
-Mancala:
+## Mancala:
 
 For this board game, two players can play. As the figure shows, the player who choose the bottom red position will be player 1 and the player choose the top blue position will be player 2.  Each player could only choose the pit on his side in each round: player 1 can only choose pits in red and player 2 can only choose pits in blue. The index for each pit is marked in the figure as well.
 
 
-**Mancala:**
 The Mancala object represents the game as played.  :
 * create_player: takes one parameter of the player’s name as a string and returns the player object. 
             (You can define the player class by yourself. It will be your own design.)
@@ -131,6 +130,26 @@ At the end, the method should return a list of the current seed number in this f
 ---------------------------------------------------------------------------
 
 
+## Tic Tac Toe Game
 
+Overview:
+This Tic Tac Toe game implementation in Python allows two players to play the classic game of Tic Tac Toe. The game is played on a 3x3 grid, and players take turns marking a square with their symbol (either X or O). The first player to get three of their marks in a row (up, down, across, or diagonally) wins the game.
 
-TODO: Add final game -> Tic-Tac-Toe
+Classes:
+The Player class represents a player in the Tic Tac Toe game.
+
+Methods:
+__init__(name): Initializes a new player with the given name.
+get_name(): Returns the name of the player.
+get_symbol(): Returns the symbol (X or O) of the player.
+set_symbol(sym): Sets the symbol for the player.
+TicTacToe
+The TicTacToe class encapsulates the game logic.
+
+Methods:
+__init__(): Initializes a new game with an empty board.
+create_player(name): Creates a new player with the given name. The game supports a maximum of 2 players.
+print_board(): Prints the current state of the board.
+return_winner(): Checks for a winner or a tie. Returns the winner's name, 'Tie' if it's a tie, or None if the game is ongoing.
+play_game(player_i, pos_i): Processes a player's move. player_i is the player index (1 or 2), and pos_i is the position on the board where they want to place their symbol.
+
